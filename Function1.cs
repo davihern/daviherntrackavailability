@@ -15,7 +15,7 @@ namespace daviherntrackavailability
         {
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
 
-            var config = new TelemetryConfiguration("f7c088e1-6774-421d-bdea-4d79566ca134");
+            var config = new TelemetryConfiguration("YOUR INSTRUMENTATION KEY");
             var telemetryClient = new TelemetryClient(config);
             var availabilityTelemetry = new AvailabilityTelemetry
             {
